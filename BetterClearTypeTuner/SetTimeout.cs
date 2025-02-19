@@ -95,7 +95,7 @@ namespace BetterClearTypeTuner
 		/// </summary>
 		public class TimeoutHandle
 		{
-			private EventWaitHandle ewh = new EventWaitHandle(false, EventResetMode.ManualReset);
+			private readonly EventWaitHandle ewh = new EventWaitHandle(false, EventResetMode.ManualReset);
 			/// <summary>
 			/// Cancels this timeout, if it is still waiting.
 			/// </summary>
